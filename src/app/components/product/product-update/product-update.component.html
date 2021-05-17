@@ -1,0 +1,20 @@
+
+
+
+<div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Nome do produto" name ='name' [(ngModel)] = "product.name" aria-label="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Preço" name="price" [(ngModel)] = "product.price" aria-label="Last name">
+    </div>
+  </div>
+  
+  
+
+
+
+<div class="d-grid gap-2 d-md-block">
+    <button (click)="updateProduct()"  class="btn btn-primary" type="button">Salvar</button>
+    <button (click)="cancel()"  class="btn btn-primary" type="button">Cancelar</button>
+  </div>
